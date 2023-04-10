@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap');
+
+:root {
+
+    --main-fnt: #f5f5e6;
+
+    --main-1: #160808; 
+    --main-2: #A8190F;
+    --main-3: #DF3B28;
+    --main-4: #E8A551;
+    --main-5: #87AC97;
+    --main-6: #0F757A;
+
+    --sat-1: #;
+    --sat-2: #;
+    --sat-3: #;
+    --sat-4: #;
+    --sat-5: #;
+    --sat-6: #;
+
+    --undr-1: #;
+    --undr-2: #;
+    --undr-3: #;
+    --undr-4: #664a27;
+    --undr-4-deeper: #130b02;
+    --undr-5: #0f1e19;
+    --undr-6: #;
+}
+
+
+/*  =========================  
+        GENERAL ELEMENTS
+    ========================= */
+
+body {
+  background-color: var(--undr-5);
+  color: var(--main-fnt-clr);
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    /* cursor: auto; */
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    /* cursor: auto; */
+}
+
+
+/*  =========================  
+      GENERAL CLASSES (think Bootstrap)
+    ========================= */
+
+/* === All Flexbox Function === */
+
+/* === All Borderstyle === */
+
+
+/*  =========================  
+        SPECIFIC CLASSES (think Javascript)
+    ========================= */
+
+/* Make every div a button */
+
+
+
+/*  =========================  
+              IDs
+    ========================= */
+
+/* === HEADER === */
+
+/* === NAV === */
+
+/* === BODY === */
+/* Specific Button */
+/* Specific Div */
+
+/* === FOOTER === */
+
+
+/*  =========================  
+        ACCESSIBILITY
+    ========================= */
+@media (max-width: 690px) {
+    
+}
+
+@media (max-width: 500px) {
+    
+}
