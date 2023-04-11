@@ -3,28 +3,33 @@
 :root {
 
     --main-fnt: #f5f5e6;
+    --main-src: #0f1e19;
 
-    --main-1: #160808; 
-    --main-2: #A8190F;
-    --main-3: #DF3B28;
-    --main-4: #E8A551;
-    --main-5: #87AC97;
-    --main-6: #0F757A;
+    /* Color Pallettes */
+    --monoc1: #366B59;
+    --monoc2: #2D3834;
+    --monoc4: #566B64;
+    --monoc5: #5CB899;
 
-    --sat-1: #;
-    --sat-2: #;
-    --sat-3: #;
-    --sat-4: #;
-    --sat-5: #;
-    --sat-6: #;
+    --triad1: #2B6B56;
+    --triad2: #1C121F;
+    --triad4: #1F190C;
+    --traid5: #6B5B30;
 
-    --undr-1: #;
-    --undr-2: #;
-    --undr-3: #;
-    --undr-4: #664a27;
-    --undr-4-deeper: #130b02;
-    --undr-5: #0f1e19;
-    --undr-6: #;
+    --comp1: #2B6B56;
+    --comp2: #406B5D;
+    --comp4: #6B2F20;
+    --comp5: #1F120F;
+
+    --spltcmp1: #6B404E;
+    --spltcmp2: #1F1115;
+    --spltcmp4: #6B4A2B;
+    --spltcmp5: #1F160E;
+
+    --shade1: #55AB8E;
+    --shade2: #366B59;
+    --shade4: #1A332A;
+
 }
 
 
@@ -33,7 +38,7 @@
     ========================= */
 
 body {
-  background-color: var(--undr-5);
+  background-color: var(--comp2);
   color: var(--main-fnt-clr);
 }
 
@@ -50,20 +55,37 @@ a.nostyle:visited {
 }
 
 
-/*  =========================  
-      GENERAL CLASSES (think Bootstrap)
-    ========================= */
+/* ==== NavBar ==== */
 
-/* === All Flexbox Function === */
+.navStyling {
+    background-color: var(--comp4);
+    color: var(--comp5);
+    font-family: 'Gemunu Libre', sans-serif;
+}
 
-/* === All Borderstyle === */
+
+/* ==== Image ==== */
+
+.idealIMG {
+    display: block;
+    max-height:75vh;
+    width: auto;
+    height: auto;
+}
+
+.idealIMGsmol {
+    display: block;
+    max-height:25vh;
+    width: auto;
+    height: auto;
+}
 
 
-/*  =========================  
-        SPECIFIC CLASSES (think Javascript)
-    ========================= */
+/* ==== Other ==== */
 
-/* Make every div a button */
+.shadowtiseMeCapt {
+    box-shadow: 6px 6px var(--main-2);
+}
 
 
 
