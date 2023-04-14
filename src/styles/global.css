@@ -40,6 +40,17 @@
 body {
   background-color: var(--comp2);
   color: var(--main-fnt-clr);
+
+  display: grid;
+  grid-template-rows: 15fr 70fr 15fr;
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
 }
 
 a.nostyle:link {
@@ -61,6 +72,13 @@ a.nostyle:visited {
     background-color: var(--comp4);
     color: var(--comp5);
     font-family: 'Gemunu Libre', sans-serif;
+}
+
+.navButtons {
+    min-width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
