@@ -34,23 +34,16 @@
 
 
 /*  =========================  
-        GENERAL ELEMENTS
+        UNIVERSAL ELEMENTS
     ========================= */
 
 body {
   background-color: var(--comp2);
-  color: var(--main-fnt-clr);
+  color: var(--main-fnt);
 
-  display: grid;
-  grid-template-rows: 15fr 70fr 15fr;
-}
-
-header {
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
 }
 
 a.nostyle:link {
@@ -65,22 +58,35 @@ a.nostyle:visited {
     /* cursor: auto; */
 }
 
+.grooved {
+    border: groove;
+    border-left-color: var(--spltcmp4);
+    border-top-color: var(--spltcmp4);
+    border-right-color: var(--spltcmp5);
+    border-bottom-color: var(--spltcmp5);
+}
+
 
 /* ==== NavBar ==== */
 
 .navStyling {
     background-color: var(--comp4);
-    color: var(--comp5);
-    font-family: 'Gemunu Libre', sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
 }
 
 .navButtons {
-    min-width: 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem 0 1rem;
 }
 
+.navFill {
+    flex: 1;
+}
 
 /* ==== Image ==== */
 
