@@ -3,8 +3,8 @@
 
 :root {
 
-    --main-fnt: #f5f5e6;
-    --main-src: #0f1e19;
+    --mainfnt: #f5f5e6;
+    --mainsrc: #0f1e19;
 
     /* Color Pallettes */
     --monoc1: #366B59;
@@ -51,7 +51,7 @@
 
 body {
   background-color: var(--greenspace);
-  color: var(--greenspace);
+  color: var(--spltcmp2);
   font-family: 'Baloo 2', cursive;
 
   display: flex;
@@ -77,6 +77,7 @@ a.nostyle:visited {
     display: flex;
     flex-direction: row;
     min-height: 10vh;
+    color: var(--greenspace);
 }
 
 .navStyling a {
@@ -97,11 +98,43 @@ a.nostyle:visited {
     flex: 1;
 }
 
+/* ==== About Me ==== */
+
+.AboutMe {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AboutMe div {
+    min-width: 50vw;
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutText {
+    background-color: rgb(245, 245, 230);
+    box-shadow: 0px 0px 25px 25px rgba(245, 245, 230, 1);
+    min-width: 30%;
+    max-width: 65%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.AboutPic {
+    
+}
+
 /* ==== Image ==== */
 
 .idealIMG {
     display: block;
-    max-height:75vh;
+    /* max-height:65vh; */
     width: auto;
     height: auto;
 }
@@ -141,7 +174,13 @@ a.nostyle:visited {
         ACCESSIBILITY
     ========================= */
 @media (max-width: 690px) {
-    
+
+.AboutMe {
+
+    flex-direction: column;
+
+}
+
 }
 
 @media (max-width: 500px) {
