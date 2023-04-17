@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 
 :root {
 
@@ -30,7 +31,18 @@
     --shade2: #366B59;
     --shade4: #1A332A;
 
+    /* Other Pallette Ideas  */
+    --mainpal: #9edeaa;
+    --alog1: #9edeca;
+    --alog2: #b2de9e;
+    --triad: #deaa9e;
+    --greenspace: #c6ddca;
+
+    --borderbright: #e2fae6;
+    --borderdark: #99b39e;
 }
+
+
 
 
 /*  =========================  
@@ -38,8 +50,9 @@
     ========================= */
 
 body {
-  background-color: var(--comp2);
-  color: var(--main-fnt);
+  background-color: var(--greenspace);
+  color: var(--greenspace);
+  font-family: 'Baloo 2', cursive;
 
   display: flex;
   flex-direction: column;
@@ -58,20 +71,9 @@ a.nostyle:visited {
     /* cursor: auto; */
 }
 
-.grooved {
-    border: groove;
-    border-left-color: var(--spltcmp4);
-    border-top-color: var(--spltcmp4);
-    border-right-color: var(--spltcmp5);
-    border-bottom-color: var(--spltcmp5);
-}
-
-
 /* ==== NavBar ==== */
 
 .navStyling {
-    background-color: var(--comp4);
-
     display: flex;
     flex-direction: row;
     min-height: 10vh;
@@ -82,6 +84,11 @@ a.nostyle:visited {
     justify-content: center;
     align-items: center;
     padding: 0 1rem 0 1rem;
+
+    border: solid;
+    border-radius: 1rem;
+    border-color: var(--greenspace);
+    background-color: var(--spltcmp2);
 }
 
 .navFill {
