@@ -1,23 +1,42 @@
 ---
 export interface Props {
-	projectData: Array<{ title: string, link: string, emoji: string, direc: string }>;
+	projectData: Array<{ title: string, deploy?: string, emoji: string, repo: string }>;
 }
 
 const { projectData = [] } = Astro.props as Props;
+const arrows = `>>>`; // Literally only here because TypeScript keeps wigging out over >>> symbols
 ---
 {projectData.map(
 	project => (
-		<a href={project.link} target="_blank" class='ProjectBox nostyle'>
-			<div class='endpiece topper'>
-				{project.title}
-			</div>
-			<span class='middle'>
-				{project.emoji}
-			</span>
-			<div class='endpiece bottom'>
-				{project.direc}&nbsp&nbsp
-			</div>
-		</a>
+		
+		<div class='ProjectBox'>
+			<a href={project.deploy} target="_blank" class='DeployLink nostyle'>
+				<span class='endpiece topper'>
+					{project.title}
+				</span>
+				<span class='middle'>
+					{project.emoji}
+				</span>
+				{ project.deploy &&
+
+					<span class='endpiece penultimate'>
+						{arrows}Deployment&nbsp&nbsp
+					</span>
+				}
+				{ !project.deploy &&
+
+					<span class='endpiece penultimate'>
+						
+					</span>
+				}
+			</a>
+			<a href={project.repo} target="_blank" class='DeployLink nostyle'>
+				<span class='endpiece bottom'>
+					{arrows}GitHub Repo&nbsp&nbsp
+				</span>
+			</a>
+		</div>
+		
 	)
 )}
 
@@ -35,7 +54,7 @@ const { projectData = [] } = Astro.props as Props;
 		box-shadow: 0px 0px 1rem 1rem var(--brightspace);
 	}
 
-	.ProjectBox * {
+	.DeployLink * {
 		background-color: var(--spltcmp2);
 		border: groove;
 		border-color: var(--spltcmp2);
@@ -68,6 +87,10 @@ const { projectData = [] } = Astro.props as Props;
 		justify-content: flex-start;
 	}
 
+	.penultimate {
+		justify-content: flex-end;
+	}
+
 	.bottom {
 		clip-path: polygon(100% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
 		justify-content: flex-end;
@@ -87,3 +110,5 @@ const { projectData = [] } = Astro.props as Props;
 		}
 	}
 </style>
+
+<!-- Removed Until Deployment Fixed -->

@@ -1,38 +1,60 @@
 [
     {
-        "title":"Daily Delight",
-        "link":"https://lawhornmatt.github.io/DailyDelight/",
-        "emoji":"🍹",
-        "direc":">>>Deployment"
+        "title":"RecipeIO",
+        "deploy":"https://recipeio-project2.herokuapp.com/login",
+        "emoji":"🍝",
+        "repo":"https://github.com/Lawhornmatt/RecipeIO"
     },
     {
-        "title":"RecipeIO",
-        "link":"https://recipeio-project2.herokuapp.com/login",
-        "emoji":"🍝",
-        "direc":">>>Deployment"
+        "title":"Daily Delight",
+        "deploy":"https://lawhornmatt.github.io/DailyDelight/",
+        "emoji":"🍹",
+        "repo":"https://github.com/Lawhornmatt/DailyDelight"
+    },
+    {
+        "title":"Boiler Maker",
+        "emoji":"♨️",
+        "repo":"https://github.com/Lawhornmatt/BoilerMaker"
+    },
+    {
+        "title":"Jukebox",
+        "deploy":"https://jukebox-project3.herokuapp.com/",
+        "emoji":"🔊",
+        "repo":"https://github.com/Lawhornmatt/Jukebox-vite"
+    },
+    {
+        "title":"JATE Editor PWA",
+        "deploy":"https://lawhorn-jate-editor.herokuapp.com/",
+        "emoji":"💻",
+        "repo":"https://github.com/Lawhornmatt/PWA_TextEditor"
     },
     {
         "title":"Tech Blog",
-        "link":"https://techblog-lawhornmatt.herokuapp.com/",
+        "deploy":"https://techblog-lawhornmatt.herokuapp.com/",
         "emoji":"✏️",
-        "direc":">>>Deployment"
+        "repo":"https://github.com/Lawhornmatt/TechBlog"
     },
     {
         "title":"Password Generator",
-        "link":"https://lawhornmatt.github.io/PasswordGenerator/",
+        "deploy":"https://lawhornmatt.github.io/PasswordGenerator/",
         "emoji":"🔒",
-        "direc":">>>Deployment"
+        "repo":"https://github.com/Lawhornmatt/PasswordGenerator"
+    },
+    {
+        "title":"Weather Channel",
+        "emoji":"🌧️",
+        "repo":"https://github.com/Lawhornmatt/MyWeatherChannel"
     },
     {
         "title":"Quiz Machine",
-        "link":"https://lawhornmatt.github.io/TakeThisQuiz/",
+        "deploy":"https://lawhornmatt.github.io/TakeThisQuiz/",
         "emoji":"❓",
-        "direc":">>>Deployment"
+        "repo":"https://github.com/Lawhornmatt/TakeThisQuiz"
     },
     {
         "title":"Schedutron-3000",
-        "link":"https://lawhornmatt.github.io/DayScheduler/",
+        "deploy":"https://lawhornmatt.github.io/DayScheduler/",
         "emoji":"📅",
-        "direc":">>>Deployment"
+        "repo":"https://github.com/Lawhornmatt/DayScheduler"
     }
 ]
