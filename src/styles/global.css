@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Roboto+Mono:ital,wght@1,200&display=swap');
 
 :root {
-
     --mainfnt: #f5f5e6;
     --mainsrc: #0f1e19;
 
@@ -43,11 +42,8 @@
     --borderdark: #99b39e;
 }
 
-
-
-
 /*  =========================  
-        UNIVERSAL ELEMENTS
+            ELEMENTS
     ========================= */
 
 body {
@@ -72,65 +68,43 @@ a.nostyle:visited {
     /* cursor: auto; */
 }
 
+/*  =========================  
+            CLASSES
+    ========================= */
+
+/* ==== Image ==== */
+
+.idealIMG {
+	display: block;
+	max-height:75vh;
+	width: auto;
+	/* height: auto; */
+}
+
+.idealIMGsmol {
+	display: block;
+	max-height:25vh;
+	width: auto;
+	height: auto;
+}
+
 /* ==== Other ==== */
 
 .shadowtiseMeCapt {
     box-shadow: 6px 6px var(--main-2);
 }
 
-
-
 /*  =========================  
               IDs
     ========================= */
-
-/* === HEADER === */
-
-/* === NAV === */
-
-/* === BODY === */
-/* Specific Button */
-/* Specific Div */
-
-/* === FOOTER === */
-
 
 /*  =========================  
         ACCESSIBILITY
     ========================= */
 @media (max-width: 700px) {
 
-.navStyling a {
-    font-size: inherit;
-}
-
-.AboutMe {
-    flex-direction: column;
-}
-
-.AboutMe div {
-    width: auto;
-}
-
-.AboutText h1{
-    font-size: 2rem;
-}
-
-.AboutText {
-    min-height: 60vh;
-    justify-content: space-evenly;
-}
-
-.AboutLinks {
-    min-width: 70vw;
-}
-
 }
 
 @media (max-width: 200px) {
-
-.AboutText h1{
-    font-size: 1.5rem;
-}
 
 }

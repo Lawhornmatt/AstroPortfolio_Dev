@@ -23,21 +23,17 @@ import Layout from '../layouts/layout.astro';
 
 <style>
 	.AboutMe {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+		min-height: 90vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	.AboutMe div {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: ; */
 		align-items: center;
-		
-		/* width: auto; */
-		/* width: 45vw; */
 	}
 
 	/* ==== AboutText ==== */
@@ -74,8 +70,6 @@ import Layout from '../layouts/layout.astro';
 		border-color: var(--spltcmp2);
 
 		margin: .1rem 0 .1rem 0;
-		/* padding-left: 1rem; */
-
 		width: 80%;
 		min-height: 10vh;
 		font-size: large;
@@ -111,31 +105,36 @@ import Layout from '../layouts/layout.astro';
 		background-color: var(--spltcmp2-inlay);
 	}
 
-	/* ==== AboutPic ==== */
+	@media (max-width: 700px) {
 
-	.AboutPic {
-		justify-content: center;
+		.AboutMe {
+			flex-direction: column;
+		}
+
+		.AboutMe div {
+			width: auto;
+		}
+
+		.AboutText h1{
+			font-size: 2rem;
+		}
+
+		.AboutText {
+			min-height: 60vh;
+			justify-content: space-evenly;
+		}
+
+		.AboutLinks {
+			min-width: 70vw;
+		}
+
 	}
 
-	.AboutPic div {
-		/* display: block; */
-		border: solid;
-		border-color: var(--spltcmp2);
-	}
+	@media (max-width: 200px) {
 
-	/* ==== Image ==== */
+		.AboutText h1{
+			font-size: 1.5rem;
+		}
 
-	.idealIMG {
-		display: block;
-		max-height:75vh;
-		width: auto;
-		/* height: auto; */
-	}
-
-	.idealIMGsmol {
-		display: block;
-		max-height:25vh;
-		width: auto;
-		height: auto;
 	}
 </style>
