@@ -1,8 +1,38 @@
 [
     {
+        "title":"Daily Delight",
+        "link":"https://lawhornmatt.github.io/DailyDelight/",
+        "emoji":"🍹",
+        "direc":">>>Deployment"
+    },
+    {
+        "title":"RecipeIO",
+        "link":"https://recipeio-project2.herokuapp.com/login",
+        "emoji":"🍝",
+        "direc":">>>Deployment"
+    },
+    {
+        "title":"Tech Blog",
+        "link":"https://techblog-lawhornmatt.herokuapp.com/",
+        "emoji":"✏️",
+        "direc":">>>Deployment"
+    },
+    {
         "title":"Password Generator",
         "link":"https://lawhornmatt.github.io/PasswordGenerator/",
         "emoji":"🔒",
+        "direc":">>>Deployment"
+    },
+    {
+        "title":"Quiz Machine",
+        "link":"https://lawhornmatt.github.io/TakeThisQuiz/",
+        "emoji":"❓",
+        "direc":">>>Deployment"
+    },
+    {
+        "title":"Schedutron-3000",
+        "link":"https://lawhornmatt.github.io/DayScheduler/",
+        "emoji":"📅",
         "direc":">>>Deployment"
     }
 ]
