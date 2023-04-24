@@ -1,0 +1,73 @@
+---
+export interface Props {
+	projectData: Array<{ title: string, link: string, direc: string }>;
+}
+
+const { projectData = [] } = Astro.props as Props;
+---
+{projectData.map(
+	project => (
+		<div class='ProjectBox'>
+			<div class='endpiece topper'>
+				{project.title}
+			</div>
+			<a href={project.link} class='nostyle middle'>
+				
+			</a>
+			<a href={project.link} class='endpiece bottom'>
+				{project.direc}
+			</a>
+		</div>
+	)
+)}
+
+<style>
+    .ProjectBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1rem;
+		transition: box-shadow .5s, background-color .5s;
+	}
+
+	.ProjectBox:hover {
+		background-color: var(--brightspace);
+		box-shadow: 0px 0px 25px 25px var(--brightspace);
+	}
+
+	.ProjectBox * {
+		background-color: var(--spltcmp2);
+		border: groove;
+		border-color: var(--spltcmp2);
+		
+		width: 150px;
+	}
+
+	.middle {
+		display: block;
+		height: 250px;
+	}
+
+	.endpiece {
+		color: var(--triad);
+		font-size: .875rem;
+		font-family: 'Roboto Mono', monospace;
+		min-height: 1rem;
+		font-weight: 100;
+		
+		display: flex;
+		text-indent: .75rem;
+		justify-content: flex-start;
+	}
+	
+	.topper {
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 5% 0);
+	}
+
+	.bottom {
+		text-decoration: inherit;
+		clip-path: polygon(100% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+	}
+
+
+</style>

@@ -58,13 +58,13 @@ body {
 
 a.nostyle:link {
     text-decoration: inherit;
-    color: inherit;
+    color: var(--greenspace);
     /* cursor: auto; */
 }
 
 a.nostyle:visited {
     text-decoration: inherit;
-    color: inherit;
+    color: var(--greenspace);
     /* cursor: auto; */
 }
 

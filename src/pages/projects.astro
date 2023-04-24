@@ -1,26 +1,25 @@
 ---
 import Layout from '../layouts/layout.astro';
+import Project from '../components/projectCard.astro';
+import ProjData from '../../public/projTest.json';
 ---
 
 <Layout>
-	<section class="AboutMe">
-		<div class="AboutText">
-			<h1>
-				Matt Lawhorn is a junior full-stack developer with interests in Javascript, web accessibility, and Geology
-			</h1>
-			<!-- <p>
-				Everything will be done December 6th - wish me luck!
-			</p> -->
-		</div>
-		<div class="AboutLinks">
-			<a>Follow Me:</a>
-			<a class="nostyle" target="_blank" href="https://github.com/Lawhornmatt">GitHub</a>
-			<a class="nostyle" target="_blank" href="https://www.linkedin.com/in/matthew-lawhorn/">Linked In</a>
-			<a></a>
-		</div>
+	<section class="ProjectDisplay">
+        <Project projectData={ProjData}/>
 	</section>
 </Layout>
 
 <style>
+    
+    .ProjectDisplay {
+        margin-top: 1rem;
+		min-height: 80vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+        flex-wrap: wrap;
+	}
 
 </style>
