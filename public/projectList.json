@@ -1,6 +1,8 @@
 [
     {
-        "title": "name of Proj",
-        "direction": "like, click to go github"
+        "title":"Password Generator",
+        "link":"https://lawhornmatt.github.io/PasswordGenerator/",
+        "emoji":"🔒",
+        "direc":">>>Deployment"
     }
 ]

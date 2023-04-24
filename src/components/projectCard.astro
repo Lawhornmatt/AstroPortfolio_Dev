@@ -1,23 +1,23 @@
 ---
 export interface Props {
-	projectData: Array<{ title: string, link: string, direc: string }>;
+	projectData: Array<{ title: string, link: string, emoji: string, direc: string }>;
 }
 
 const { projectData = [] } = Astro.props as Props;
 ---
 {projectData.map(
 	project => (
-		<div class='ProjectBox'>
+		<a href={project.link} target="_blank" class='ProjectBox nostyle'>
 			<div class='endpiece topper'>
 				{project.title}
 			</div>
-			<a href={project.link} class='nostyle middle'>
-				
-			</a>
-			<a href={project.link} class='endpiece bottom'>
-				{project.direc}
-			</a>
-		</div>
+			<div class='middle'>
+				{project.emoji}
+			</div>
+			<div class='endpiece bottom'>
+				{project.direc}&nbsp&nbsp
+			</div>
+		</a>
 	)
 )}
 
@@ -32,20 +32,21 @@ const { projectData = [] } = Astro.props as Props;
 
 	.ProjectBox:hover {
 		background-color: var(--brightspace);
-		box-shadow: 0px 0px 25px 25px var(--brightspace);
+		box-shadow: 0px 0px 1rem 1rem var(--brightspace);
 	}
 
 	.ProjectBox * {
 		background-color: var(--spltcmp2);
 		border: groove;
 		border-color: var(--spltcmp2);
-		
-		width: 150px;
+		width: 175px;
 	}
 
 	.middle {
-		display: block;
-		height: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
 	}
 
 	.endpiece {
@@ -55,19 +56,25 @@ const { projectData = [] } = Astro.props as Props;
 		min-height: 1rem;
 		font-weight: 100;
 		
-		display: flex;
 		text-indent: .75rem;
-		justify-content: flex-start;
+		display: flex;
+		
 	}
 	
 	.topper {
 		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 5% 0);
+		justify-content: flex-start;
 	}
 
 	.bottom {
-		text-decoration: inherit;
 		clip-path: polygon(100% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+		justify-content: flex-end;
 	}
 
+	@media (max-width: 500px) {
+		.ProjectBox * {
+			width: 75vw;
+		}
+	}
 
 </style>

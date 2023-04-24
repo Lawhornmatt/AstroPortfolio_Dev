@@ -1,14 +1,14 @@
 [
-	{"title":"ProjectOne","link":"thisurl","direc":">>> Deployment"},
-	{"title":"ProjectTwo","link":"thisurl","direc":">>> Heroku"},
-	{"title":"ProjectThree","link":"thisurl","direc":">>> GitHub Repo"},
-	{"title":"ProjectFour","link":"thisurl","direc":">>> Deployment"},
-	{"title":"ProjectFive","link":"thisurl","direc":">>> GitHub Repo"},
-	{"title":"ProjectSix","link":"thisurl","direc":">>> GitHub Repo"},
-	{"title":"ProjectSeven","link":"thisurl","direc":">>> Heroku"},
-	{"title":"ProjectEight","link":"thisurl","direc":">>> Deployment"},
-	{"title":"ProjectNine","link":"thisurl","direc":">>> GitHub Repo"},
-	{"title":"ProjectTen","link":"thisurl","direc":">>> Deployment"},
-	{"title":"ProjectEleven","link":"thisurl","direc":">>> Heroku"},
-	{"title":"ProjectTwelve","link":"thisurl","direc":">>> GitHub Repo"}
+	{"title":"ProjectOne","link":"thisurl", "emoji":"🔒", "direc":">>> Deployment"},
+	{"title":"ProjectTwo","link":"thisurl", "emoji":"🔒", "direc":">>> Heroku"},
+	{"title":"ProjectThree","link":"thisurl", "emoji":"🔒", "direc":">>> GitHub Repo"},
+	{"title":"ProjectFour","link":"thisurl", "emoji":"🔒", "direc":">>> Deployment"},
+	{"title":"ProjectFive","link":"thisurl", "emoji":"🔒", "direc":">>> GitHub Repo"},
+	{"title":"ProjectSix","link":"thisurl", "emoji":"🔒", "direc":">>> GitHub Repo"},
+	{"title":"ProjectSeven","link":"thisurl", "emoji":"🔒", "direc":">>> Heroku"},
+	{"title":"ProjectEight","link":"thisurl", "emoji":"🔒", "direc":">>> Deployment"},
+	{"title":"ProjectNine","link":"thisurl", "emoji":"🔒", "direc":">>> GitHub Repo"},
+	{"title":"ProjectTen","link":"thisurl", "emoji":"🔒", "direc":">>> Deployment"},
+	{"title":"ProjectEleven","link":"thisurl", "emoji":"🔒", "direc":">>> Heroku"},
+	{"title":"ProjectTwelve","link":"thisurl", "emoji":"🔒", "direc":">>> GitHub Repo"}
 ]
