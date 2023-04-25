@@ -1,18 +1,74 @@
 ---
 import Layout from '../layouts/layout.astro';
-import PDF from '../components/pdf_viewer.astro';
 ---
 
 <Layout>
-    <PDF />
+    <div class="AboutLinks">
+        <a>Matt Lawhorn Résumé</a>
+        <a class="nostyle" download="Matt_Lawhorn_Resume" href="/230317resume.pdf">Download</a>
+        <a></a>
+    </div>
+    
+    <embed src="/230317resume.pdf" id="pdf"/>
 </Layout>
 
 <style>
     #pdf {
+        display:none;
         width: 95%;
         height: 1000px;
         margin-top: 3rem;
         align-self: center;
     }
 
+    .AboutLinks {
+        display:none;
+		color: var(--greenspace);
+		width: 80vw;
+        align-self: center;
+        margin-top: 6rem;
+	}
+
+	.AboutLinks a {
+		background-color: var(--spltcmp2);
+		border: groove;
+		border-color: var(--spltcmp2);
+
+		margin: .1rem 0 .1rem 0;
+		width: 100%;
+		min-height: 10vh;
+		font-size: large;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.AboutLinks a:first-child {
+		color: var(--triad);
+		font-size: .875rem;
+		font-family: 'Roboto Mono', monospace;
+		text-indent: .75rem;
+		justify-content: flex-start;
+		min-height: 1rem;
+		font-weight: 100;
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 5% 0);
+	}
+
+	.AboutLinks a:last-child {
+		min-height: 1rem;
+		clip-path: polygon(100% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+	}
+
+	@media (max-width: 500px) {
+        .AboutLinks {
+            display: block;
+        }
+    }
+
+	@media (min-width: 500px) {
+        #pdf {
+            display: block;
+        }
+    }
 </style>
