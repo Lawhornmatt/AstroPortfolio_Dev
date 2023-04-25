@@ -20,7 +20,7 @@
         border-color: var(--spltcmp2);
     
         margin: .1rem 0 0 .1rem;
-        min-width: 8vw;
+        min-width: 5rem;
     }
     
     .navStyling a:not(:last-child) {
@@ -45,6 +45,14 @@
     @media (max-width: 700px) { 
         .navStyling a {
             font-size: inherit;
+            min-width: 3rem;
+        }
+    }
+    
+    @media (max-width: 300px) { 
+        .navStyling a {
+            font-size: .5rem;
+            min-width: 2rem;
         }
     }
 </style>
