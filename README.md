@@ -20,7 +20,7 @@ This is the ReadMe for Matthew Lawhorn's Portfolio
 
 This website was made to showcase all of my accomplishments as a full stack web developer. Here you can find links to working and deployed projects, see examples of my skills, and the rare blog posts of interesting things I find in the web development industry. I started learning web development in 2022 and you can keep up with my journey here!
 
-<img src='INSERT PATH TO SCREENSHOT HERE' alt='A screenshot of Portfolio'/>
+<img src='public\screenshot.png' alt='A screenshot of Portfolio'/>
 
 ## USAGE:
 
