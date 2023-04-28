@@ -1,9 +1,13 @@
 <nav class="navStyling" id="mainNavBar">
     <a class="nostyle" href="/">Home</a>
     <a class="nostyle" href="/projects">Projects</a>
-    <a class="nostyle" href="/resume">Résumé</a>
+    <a class="nostyle" href="/resume">Resumé</a>
     <!-- <a class="nostyle" href="/extra">Extra</a> -->
-    <a></a>
+    <a>
+        <div id='logo'>
+            <img class='idealIMG' src='/mylogo.png'/>
+        </div>
+    </a>
 </nav>
 
 <style>
@@ -40,12 +44,35 @@
     .navStyling a:last-child {
         flex: 1;
         z-index: 99;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .idealIMG {
+        display: block;
+        max-height: 3rem;
+        width: auto;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--spltcmp2-inlay);
+        max-height: 3rem;
+        margin: 0 1rem 0 0;
     }
 
     @media (max-width: 700px) { 
         .navStyling a {
             font-size: inherit;
             min-width: 3rem;
+        }
+
+        #logo {
+            display: none;
         }
     }
     

@@ -125,19 +125,3 @@ a.nostyle:visited {
 /*  =========================  
             CLASSES
     ========================= */
-
-/* ==== Image ==== */
-
-.idealIMG {
-	display: block;
-	max-height:75vh;
-	width: auto;
-	/* height: auto; */
-}
-
-.idealIMGsmol {
-	display: block;
-	max-height:25vh;
-	width: auto;
-	height: auto;
-}
