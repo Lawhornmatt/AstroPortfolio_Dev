@@ -24,15 +24,13 @@ This website was made to showcase all of my accomplishments as a full stack web 
 
 ## USAGE:
 
-This is a static web page. Click [here](INSERT URL HERE) to check it out for yourself.
+This is a static web page. Click [here](https://lawhornmatt.com) to check it out for yourself.
 
 ## QUESTIONS:
 
 If you have any questions,
 
 you can find my GitHub here: https://github.com/Lawhornmatt
-
-or email me here: fake@notreal.com
 
 ## CREDIT:
 
